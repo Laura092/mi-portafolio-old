@@ -1,7 +1,21 @@
-h2 {
-    font-size: 4em;
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: black;
+    height: 100vh;
+    width: 100%;
+}
+label{
+    font-size: 6em;
     color:blueviolet;
-    font-family: 'Cinzel'
+    font-family: 'Cinzel';
+    text-align: center;
 }
 /* cinzel-regular - latin */
 @font-face {
