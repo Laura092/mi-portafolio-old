@@ -36,13 +36,33 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: .9em;
 }
-.box-2 {
+.add-cart-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(39, 200, 164);
+  }
+.add-cart-2-span {
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
 }
-.box-3 {
-}
-p{
-    font-size: 1.4em;
-    text-align: justify;
-    padding: 20px;
-    color: rgb(255,255,255);
+.add-cart-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(39, 200, 164);
+  }
+.add-cart-3-span {
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
 }
