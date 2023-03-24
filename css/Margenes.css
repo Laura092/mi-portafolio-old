@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242,242,242);
+}
+.main-box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
+.box-style {
+    width: 300px;
+    height: 450px;
+    margin: 0 40px;
+    background-color: rgb(255,255,255);
+}
+.box-1 {
+    border: 3px solid black;
+    
+}
+.box-2 {
+    border: 3px dotted darkolivegreen;
+}
+.box-3 {
+    border: 3px dashed goldenrod;
+}
+.box-4 {
+    border: 3px double dodgerblue;
+}
+p{
+    font-size: 1.4em;
+    text-align: justify;
+    padding: 20px;
+    background-color: rgb(255,255,255);
+}
