@@ -1,0 +1,114 @@
+.table-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+th,td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px 25px;
+    text-align: center;
+}
+.border-sup-izq {
+    border-top-left-radius: 20px;
+    background-color: aquamarine;
+    color: white;
+}
+.th-canal {
+    background-color: gold;
+    color: white
+}
+
+.th-basic {
+    background-color: silver;
+    color: white
+}
+.th-silver {
+    background-color: silver;
+    color: white
+}
+.th-gold {
+    background-color: silver;
+    color: white
+}
+.th-platino {
+    border-top-right-radius: 20px;
+    background-color: silver;
+    color: white
+}
+.Discovery {
+    background-color: blueviolet;
+    color: white;
+}
+.Discovery-Channel {
+    background-color: blueviolet;
+    color: white;
+}
+.Discovery-HyH {
+    background-color: blueviolet;
+    color: white;
+}
+.star-color {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.back-check {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.color-si {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.hbo {
+    border-bottom-left-radius:20px;
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.maxno {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.max {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.hp {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.haa {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.no2 {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.hao2 {
+    border-bottom-right-radius: 20px;
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.hbop {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.hbosi {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+.maxcheck {
+    background-color: rgb(100, 243, 105);
+    color: white;
+}
+
+
+
+
+
