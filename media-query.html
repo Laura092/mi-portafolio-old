@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante El Sabor De Mi Tierra</title>
+    <title>Restaurante El sabor de mi tierra</title>
     <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <span id="menuBar"class="menu-bar">&#9776</span>
-        <ul class="main-menu">
-        <li class="item-style"><a href="">Menú</a></li>
-        <li class="item-style"><a href="">Contáctenos</a></li>
-        <li class="item-style"><a href="">Horarios de Atención</a></li>
-        <li class="item-style"><a href="">Ubicación</a></li>
-        <li class="item-style"><a href="">Servicios Adicionales</a></li>
-        <li class="item-style"><a href="">Domiclios</a></li>
-        <li class="item-style"><a href="">Reservaciones</a></li>
+    <nav id="mainNav" class="main-nav">
+        <span id="menuBar" class="menu-bar">&#8801</span>
+        <ul id="mainMenu" class="main-menu">
+            <li class="item-style"><a href="#">Menú</a></li>
+            <li class="item-style"><a href="#">Contáctenos</a></li>
+            <li class="item-style"><a href="#">Horarios de Atención</a></li>
+            <li class="item-style"><a href="#">Ubicación</a></li>
+            <li class="item-style"><a href="#">Servicios Adicionales</a></li>
+            <li class="item-style"><a href="#">Domicilios</a></li>
+            <li class="item-style"><a href="#">Reservaciones</a></li>
         </ul>
     </nav>
+    
     <script src="js/media-query.js"></script>
 </body>
-</html>
+
+JS
+let menuBar = document.getElementById("menuBar");
+let mainMenu = document. getElementById("mainMenu");
+
+menuBar.addEventListener("click", function() {
+    if (mainMenu.classList.contains("main-menu")) {
+        mainMenu.classList.add("main-menu-block");
+        mainMenu.classList.remove("main-menu");
+    }
+    else {
+        mainMenu.classList.add("main-menu");
+        mainMenu.classList.remove("main-menu-block");
+    }
+});
