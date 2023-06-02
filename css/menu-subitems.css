@@ -4,11 +4,11 @@
     font-family: Verdana, sans-serif;
 }
 nav {
-    background-color: rgb(7, 153, 182);
+    background-color: rgb(17, 103, 164);
     height: 70px; 
 }
  nav ul {
-    background-color: rgb(7, 153, 182);
+    background-color: rgb(17, 103, 164);
     list-style: none;
     position: absolute;
     width: 100%;
@@ -29,7 +29,7 @@ ul li {
 }
 
 li:hover {
-    background-color: rgb(17, 76, 95);
+    background-color: rgb(69, 147, 203);
     cursor: pointer;
 }
 a {
