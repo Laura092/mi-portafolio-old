@@ -4,11 +4,11 @@
     font-family: Verdana, sans-serif;
 }
 nav {
-    background-color: rgb(64,64,64);
+    background-color: rgb(7, 153, 182);
     height: 70px; 
 }
  nav ul {
-    background-color: rgb(64,64,64);
+    background-color: rgb(7, 153, 182);
     list-style: none;
     position: absolute;
     width: 100%;
@@ -27,8 +27,9 @@ nav > ul {
 ul li {
     position: relative;
 }
+
 li:hover {
-    background-color: goldenrod;
+    background-color: rgb(17, 76, 95);
     cursor: pointer;
 }
 a {
@@ -38,8 +39,16 @@ a {
 nav li li {
     max-height: 0;
     overflow: hidden;
+    transition: all 1s;
 }
-nav li:hover ul li {
+nav li:hover > ul > li {
     overflow: visible;
     max-height: 500px;
+    border: 1px solid rgb(255,255,255, .2);
+    transition: all 1s;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
 }
