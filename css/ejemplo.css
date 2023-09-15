@@ -1,0 +1,15 @@
+#image-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Ancho total del contenedor de imágenes */
+}
+
+#image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#prev-btn, #next-btn {
+    cursor: pointer;
+}

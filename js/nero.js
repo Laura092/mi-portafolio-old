@@ -1,14 +1,14 @@
-let menuBar = document.getElementById("menuBar")
-let mainNav = document.getElementById("mainNav")
-let mainMenu =document.getElementById("mainMenu")
+let iconChevronleft = document.getElementById("iconChevronleft");
+let iconChevronRight = document.getElementById("iconChevronRight");
+let boxCarousel = document.getElementById("boxCarousel");
 
-menuBar.addEventListener("click", function() {
-if ( mainMenu.classList.contains("main-menu")) {
-     mainMenu.classList.add("main-menu-block");
-     mainMenu.classList.remove("main-menu");
-}
-else {
-     mainMenu.classList.add("main-menu");
-     mainMenu.classList.remove("main-menu-block");
-} 
+iconChevronleft.addEventListener("click", function() { 
+     if (boxCarousel.classList.contains("box-carousel-1")) {
+         boxCarousel.classList.remove("box-carousel-1");
+         boxCarousel.classList.add("box-carousel-2");
+     }
+     else if (boxCarousel.classList.contains("box-carousel-2")) {
+          boxCarousel.classList.remove("box-carousel-2");
+          boxCarousel.classList.add("box-carousel-3");
+     }
 });

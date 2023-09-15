@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
+    box-sizing: border;
 }
 .style-box-1 {
     width: 100%;
@@ -10,18 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.icons-lupa {
-  width: 100%;
-  height: 10px;
-  margin-left: 50px;
-  color: white;
-}
-.icons-car {
-  width: 100%;
-  height: 100px;
-  margin-left: 50px;
-  color: white;
 }
 .box-img-title {
     width: 100%;
@@ -36,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .main-menu {
     display: flex;
@@ -51,11 +40,57 @@ a {
     font-size: 1em;
     font-weight: 600;
 }
-/* .imput-tex 
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
-  margin-left: 100%; */
+#amarillo {
+  color: yellow;
+}
+body {
+  overflow-x: hidden;
+}
+.box-carousel {
+  width: 400%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+}
+.box-carousel-1 {
+  left:  0;
+}
+.box-carousel-2 {
+  left:  -100%;
+}
+.box-carousel-2 {
+  left:  -200%;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(100vh - 95px);
+}
+.box-img-carousel {
+  height: calc(100vh - 95px);
+  width: 25%;
+}
+.img-carousel {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.icon-chevron-left, .icon-chevron-right {
+  font-size: 3em;
+  color: white;
+  position: fixed;
+  top: 500px;
+}
+.icon-chevron-left {
+  left: 20px;
+}
+.icon-chevron-right {
+  right: 20px;
+}
+.box-card-1 {
+  height: 500px;
+}
 /* Fonts */
 /* poppins-regular - latin */
 @font-face {
