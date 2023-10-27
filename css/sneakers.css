@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+   
+}
+body{
+    display: grid;
+    grid-template:"empty-left  content  empty-right"/
+                       1fr       1100px       1fr  ;
+
+}           
+.content {
+    grid-area: content;
+}          
+
+  header {
+    display: grid;
+    grid-template:"main-title  main-menu   carrito-foto" /
+                     150px       1fr           90px ;
+    align-items: center;
+    width: 100%;
+    height: 100px;                 
+}
+.main-title {
+    font-family: 'kanit',sans serif;
+    font-weight: 800;
+    font-size: .9em;
+    color: rgb(48, 48, 48);
+}
+.box-main-content {
+    display: grid;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+.main-content {
+    display: grid;
+    grid-template:"empty-left  box-left  empty-center  box-info  empty-right"400px /
+                     40px       500px          120px       1fr        40px ;
+    z-index: 10;   
+    height: 600px;              
+}
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    color: rgb(96,96,96);
+    list-style: none;
+    padding-left: 40px;
+   
+}
+.main-menu li {
+    /* display:flex;
+    align-items: center;
+    height: 100px; */
+    margin: 0 25px;
+}
+.main-menu li:hover {
+    border-bottom: 2px solid rgb(255, 125, 26);
+    cursor: pointer;
+}
+.carrito-foto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+
+}
+.icon-carrito {
+    font-size: 1.6em;
+    padding-right: 20px;
+}
+.foto{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 -2px  5px rgb(96, 96, 96);
+
+}
+
+
+.box-left {
+    grid-area: box-left;
+    grid-template:"box-img"
+                  "box-thumbnail" /
+                  1fr
+}
+.box-img {
+    grid-area: box-img;
+}
+.main-img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box-img-fixed {
+    width:100%;
+    height:100vh;
+    position: fixed;
+    background-color: #00000097;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+.box-img-fixed-hidden{
+    display: none;
+}
+
+.main-img-fixed {
+    width: 500px;
+    border-radius: 20px;
+}
+.icon-style{
+    font-size: 1.2em;
+}
+.img-hidden {
+    display: none;
+}
+.box-icons{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-icons:hover {
+    cursor: pointer;
+    
+}
+.box-icons-left{
+    position: relative;
+    top:-275px;
+    left: -25px;
+}
+.box-icons-right{
+    position: relative;
+    top:-325px;
+    left: 475px;
+}
+.box-img-selected {
+    width: 500px;
+    height: 500px;
+}
+.box-boton-cerrar{
+    position: relative;
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    font-family: sans-serif;
+    top: -660px;
+    left: 460px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.boton-cerrar{
+    cursor: pointer;
+}
+.box-thumbnail {
+    grid-area: box-thumbnail;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  
+}
+.thumb-1 {
+ grid-area: thumb-1;   
+}
+.thumb-2 {
+    grid-area: thumb-2;   
+}
+.thumb-3 {
+    grid-area: thumb-3;   
+}
+.thumb-4 {
+    grid-area: thumb-4;
+}
+.thumb {
+    width: 103px;
+    border-radius: 30px;
+    /* padding: 15px; */
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+.thumb:hover {
+    opacity: 0.5;
+
+}
+.box-thumb:hover {
+    position: relative;
+    background-color:rgb(255,255,255) ;
+    z-index: 20;
+    border-radius: 30px;
+    height: 103px;
+   
+
+}
+.box-info{
+    grid-area: box-info;
+}
+/* Fonts */
+/* kanit-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kanit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kanit-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/kanit-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kanit-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/kanit-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kanit-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/kanit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kanit-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/kanit-v15-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* lato-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/lato-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
